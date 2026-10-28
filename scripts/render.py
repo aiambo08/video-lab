@@ -168,7 +168,8 @@ def main():
         "comprobaciones": comprobaciones,
     }
     (dir_video / f"manifest-{args.calidad}.json").write_text(
-        json.dumps(manifiesto, indent=2, ensure_ascii=False), encoding="utf-8"
+        json.dumps(manifiesto, indent=2, ensure_ascii=False) + "\n",
+        encoding="utf-8", newline="\n",
     )
 
     log(f"comprobaciones: {comprobaciones}")
