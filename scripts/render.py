@@ -37,8 +37,10 @@ def commit_git() -> dict:
         commit = primera_linea(["git", "rev-parse", "HEAD"])
     except subprocess.CalledProcessError:
         commit = None  # repositorio sin commits
+    # Los manifiestos son salidas del render; no cuentan como cambios del código.
     cambios = subprocess.run(
-        ["git", "status", "--porcelain"], cwd=RAIZ, capture_output=True, text=True
+        ["git", "status", "--porcelain", "--", ".", ":!videos/*/manifest-*.json"],
+        cwd=RAIZ, capture_output=True, text=True,
     ).stdout.strip()
     return {"commit": commit, "cambios_sin_commit": bool(cambios)}
 
