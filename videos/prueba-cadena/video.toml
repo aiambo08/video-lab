@@ -1,0 +1,38 @@
+# Vídeo técnico de prueba: valida la cadena Manim -> FFmpeg -> MP4 vertical.
+# Sin contenido didáctico.
+
+slug = "prueba-cadena"
+titulo = "Prueba de la cadena técnica"
+estado = "prueba"
+
+[formato]
+duracion_s = 5.0
+tolerancia_s = 0.1
+
+[calidad.borrador]
+ancho = 540
+alto = 960
+fps = 15
+
+[calidad.final]
+ancho = 1080
+alto = 1920
+fps = 30
+
+[[escenas]]
+id = "prueba"
+archivo = "escenas/prueba.py"
+clase = "Prueba"
+motor = "manim"
+duracion_s = 5.0
+
+[audio]
+# Tono generado localmente por FFmpeg; se sustituirá por narración real.
+tipo = "tono"
+frecuencia_hz = 440
+volumen = 0.1
+
+[subtitulos]
+archivo = "subtitulos.srt"
+# Estilo ASS sobre resolución de referencia de libass (288 px de alto).
+estilo = "FontName=Arial,FontSize=12,Outline=2,Shadow=0,MarginV=60"

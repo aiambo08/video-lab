@@ -1,0 +1,43 @@
+{
+  "fecha": "2026-10-28T16:49:15",
+  "slug": "prueba-cadena",
+  "calidad": "borrador",
+  "parametros": {
+    "ancho": 540,
+    "alto": 960,
+    "fps": 15
+  },
+  "git": {
+    "commit": null,
+    "cambios_sin_commit": true
+  },
+  "versiones": {
+    "python": "3.12.13",
+    "manim": "Manim Community v0.22.1",
+    "ffmpeg": "ffmpeg version N-122346-g840183d823-20260104 Copyright (c) 2000-2025 the FFmpeg developers",
+    "so": "Windows-11-10.0.26300-SP0"
+  },
+  "entradas": {
+    "videos/prueba-cadena/video.toml": "81bc358a76eba3ac2094c71eac417b79d489251f0e5c8c53a3bd010202b83065",
+    "videos/prueba-cadena/subtitulos.srt": "aa7433bb5eb448497862254fc399aa8322541800513d5c57ce4cfc9f8881be3a",
+    "uv.lock": "74b7f739b9ec363ee669f20dd55909a48e1c968da05665385183a3c2e66841ea",
+    "scripts/render.py": "702f9da5e256af62be2b958768bb4bceb1af61868fa94a24c7a203e918926947",
+    "videos/prueba-cadena/escenas/prueba.py": "1254d61be30ad3487e241639912567c2827ca2fcc7a2384e3c7131d2c046cf00"
+  },
+  "salida": {
+    "archivo": "videos/prueba-cadena/render/borrador/prueba-cadena.mp4",
+    "sha256": "dd45f23a865c89e9eeed3b2f6818a868014c08464d2d01d977782fc49935a24d"
+  },
+  "medido": {
+    "ancho": 540,
+    "alto": 960,
+    "fps": "15/1",
+    "duracion_s": 5.0,
+    "tiene_audio": true
+  },
+  "comprobaciones": {
+    "resolucion": true,
+    "duracion": true,
+    "audio": true
+  }
+}

@@ -1,0 +1,23 @@
+# Secretos
+.env
+.env.*
+*.key
+*.pem
+secrets/
+
+# Renders y medios pesados
+renders/
+videos/*/render/
+*.mp4
+*.mov
+*.wav
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
